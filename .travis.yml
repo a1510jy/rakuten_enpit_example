@@ -1,9 +1,6 @@
 language: ruby
 rvm:
-- 2.0.0
-- 1.9.3
-- jruby-19mode
-- rbx-2
+- 2.2.2
 deploy:
   provider: heroku
   api_key:
@@ -11,3 +8,7 @@ deploy:
   app: protected-fjord-4731
   on:
     repo: a1510jy/rakuten_enpit_example
+cache:
+  directories:
+  - vendor/bundle
+
